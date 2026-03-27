@@ -33,9 +33,13 @@ Production-minded monorepo for selling athletic training programs online.
 ## Quick Start
 ## 1) Backend
 ```bash
-cd backend
 python -m venv .keruvim_venv
 source .keruvim_venv/bin/activate
+pip install django
+django-admin --version
+django-admin startproject backend
+cd backend
+python manage.py startapp <app_name>
 pip install -r requirements.txt
 cp .env.sample .env
 python manage.py makemigrations
