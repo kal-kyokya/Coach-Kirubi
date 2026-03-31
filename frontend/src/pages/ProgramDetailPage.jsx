@@ -6,7 +6,7 @@ export default function ProgramDetailPage() {
     const { slug } = useParams()
     const navigate = useNavigate()
     const [program, setProgram] = useState(null)
-    const [form, setForm] useState({ customer_name: '', customer_email: '', customer_phone: '' })
+    const [form, setForm] = useState({ customer_name: '', customer_email: '', customer_phone: '' })
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(false)
 
@@ -33,7 +33,7 @@ export default function ProgramDetailPage() {
     return (
 	<div className="page program-detail">
 	    <h1>{program.title}</h1>
-	    <h1>{program.description}</p>
+	    <p>{program.description}</p>
 	    <ul>
 		<li>Duration: {program.duration_weeks} weeks</li>
 		<li>Level: {program.level}</li>

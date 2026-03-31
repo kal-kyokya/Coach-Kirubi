@@ -6,11 +6,11 @@ export default function ProgramCard({ program }) {
 	    <h3>{program.title}</h3>
 	    <p>{program.short_description}</p>
 	    <div className="meta">
-		<span>{program.duration_weeks} weeks</>
+		<span>{program.duration_weeks} weeks</span>
 		<span>{program.level}</span>
 	    </div>
 	    <strong>KES {program.price}</strong>
-	    <Link to={`/programs/{program.slug}` className="cta"}></Link>
+	    <Link to={`/programs/{program.slug`} className="cta"></Link>
 	</article>
     )
 }
