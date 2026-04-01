@@ -37,11 +37,11 @@ class Order(models.Model):
         return f'{self.customer_email} - {self.program.title} ({self.status})'
 
 
-class PaymentEvent(models.model):
+class PaymentEvent(models.Model):
     EVENT_INITIATE = 'initiate'
     EVENT_CALLBACK = 'callback'
 
-    order = models.ForeignKey(Order, on_delete=models.CASCADE, related_named='events')
+    order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='events')
     event_type = models.CharField(max_length=20)
     payload = models.JSONField(default=dict)
     success = models.BooleanField(default=False)

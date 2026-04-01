@@ -34,7 +34,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'apps.programs',
-    'apps.orders.',
+    'apps.orders',
     'apps.pages',
 ]
 
@@ -107,7 +107,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 PUBLIC_BASE_URL = os.getenv('PUBLIC_BASE_URL', '').rstrip('/')
 _default_callback_path = '/api/orders/payments/mpesa/callback/'
-mpesa_callback_url = os.getenv('MPESA_CALLBACK_URL', '').strip
+mpesa_callback_url = os.getenv('MPESA_CALLBACK_URL', '').strip()
 if not mpesa_callback_url and PUBLIC_BASE_URL:
     mpesa_callback_url = f'{PUBLIC_BASE_URL}{_default_callback_path}'
 

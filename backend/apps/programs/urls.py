@@ -1,7 +1,7 @@
 from django.urls import path
-from .view import ProgramDetailAPIView, ProgramListAPIView
+from .views import ProgramDetailAPIView, ProgramListAPIView
 
-urlpartters = [
+urlpatterns = [
     path('', ProgramListAPIView.as_view(), name='program-list'),
     path('<slug:slug>/', ProgramDetailAPIView.as_view(), name='program-detail'),
 ]
