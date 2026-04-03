@@ -6,7 +6,7 @@ export default function CatalogPage() {
     const [programs, setPrograms] = useState([])
 
     useEffect(() => {
-	fecthPrograms().then(setPrograms)
+	fetchPrograms().then(setPrograms)
     }, [])
 
     return (
