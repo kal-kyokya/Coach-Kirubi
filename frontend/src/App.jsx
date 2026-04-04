@@ -8,11 +8,13 @@ function App() {
     return (
 	<div className="app-shell">
 	    <header className="topbar">
-		<Link to="/" className="brand"></Link>
-		<nav>
-		    <Link to="/programs">Programs</Link>
-		    <a href="#contact">Contact</a>
-		</nav>
+		<div className="topbar-content">
+		    <Link to="/" className="brand">Coach Kirubi</Link>
+		    <nav>
+			<Link to="/programs">Programs</Link>
+			<a href="#contact">Contact</a>
+		    </nav>
+		</div>
 	    </header>
 	    <main>
 		<Routes>
