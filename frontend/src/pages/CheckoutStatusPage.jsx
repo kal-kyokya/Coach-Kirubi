@@ -14,11 +14,16 @@ export default function CheckoutStatusPage() {
 
     return (
 	<div className="page status-page">
-	    <h1>Order Status</h1>
-	    <p><strong>Program:</strong> {statusData.program_title}</p>
-	    <p><strong>Status:</strong> {statusData.status}</p>
-	    <p><strong>Access:</strong> {statusData.access_granted ? 'Granted' : 'Pending payment confirmation'}</p>
-	    {statusData.mpesa_receipt_number && <p><strong>Receipt:</strong> {statusData.mpesa_receipt_number}</p>}
+	    <section className="section-stack">
+		<h1>Order Status</h1>
+		<p>Track your latest payment and access update:</p>
+	    </section>
+	    <section className="status-card">
+		<p><strong>Program:</strong> {statusData.program_title}</p>
+		<p><strong>Status:</strong> {statusData.status}</p>
+		<p><strong>Access:</strong> {statusData.access_granted ? 'Granted' : 'Pending payment confirmation'}</p>
+		{statusData.mpesa_receipt_number && <p><strong>Receipt:</strong> {statusData.mpesa_receipt_number}</p>}
+	    </section>
 	</div>
     )
 }
