@@ -21,7 +21,7 @@ export default function HomePage() {
 		<p>{home?.hero_subtitle}</p>
 		<Link className="cta" to="/programs">{home?.primary_cat_label || 'Shop Programs'}</Link>
 	    </section>
-	    <section>
+	    <section className="section-stack">
 		<h2>Featured Programs</h2>
 		<div className="grid">
 		    {programs.map((program) => <ProgramCard key={program.id} program={program} />)}
