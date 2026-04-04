@@ -10,7 +10,7 @@ export default function ProgramCard({ program }) {
 		<span>{program.level}</span>
 	    </div>
 	    <strong>KES {program.price}</strong>
-	    <Link to={`/programs/{program.slug`} className="cta"></Link>
+	    <Link to={`/programs/{program.slug`} className="cta">View program</Link>
 	</article>
     )
 }
