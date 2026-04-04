@@ -17,8 +17,8 @@ export default function HomePage() {
     return (
 	<div className="page">
 	    <section className="hero">
-		<h1>{home?.hero_title || 'Train with purpose'}</h1>
-		<p>{home?.hero_subtitle}</p>
+		<h1>{home?.hero_title || 'Train like an athlete. Perform like a champion.'}</h1>
+		<p>{home?.hero_subtitle || 'Premium coaching programs built for speed, strength, and peak performance.'}</p>
 		<Link className="cta" to="/programs">{home?.primary_cat_label || 'Shop Programs'}</Link>
 	    </section>
 	    <section className="section-stack">
