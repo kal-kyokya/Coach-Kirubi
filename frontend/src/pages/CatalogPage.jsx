@@ -11,8 +11,10 @@ export default function CatalogPage() {
 
     return (
 	<div className="page">
-	    <h1>Training Programs</h1>
-	    <p>Choose a structured plan built for measurable athletic progress</p>
+	    <section className="section-stack">
+		<h1>Training Programs</h1>
+		<p>Choose a structured plan built for measurable athletic progress</p>
+	    </section>
 	    <div className="grid">
 		{programs.map((program) => <ProgramCard key={program.id} program={program} />)}
 	    </div>
