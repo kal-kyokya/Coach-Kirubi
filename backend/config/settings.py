@@ -25,13 +25,13 @@ if PRODUCTION_SUBDOMAIN:
 ALLOWED_HOSTS = sorted(_allowed_hosts)
 
 INSTALLED_APPS = [
+    'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'corsheaders',
     'rest_framework',
     'apps.programs',
     'apps.orders',
