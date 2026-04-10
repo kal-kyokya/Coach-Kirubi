@@ -9,7 +9,12 @@ function App() {
 	<div className="app-shell">
 	    <header className="topbar">
 		<div className="topbar-content">
-		    <Link to="/" className="brand">Coach Kirubi</Link>
+		    <Link to="/" className="brand">
+			<img src='/keruvim-logo.jpg'
+			     alt='Logo of the Futtech Company'
+			/>
+			Coach Kirubi
+		    </Link>
 		    <nav>
 			<Link to="/programs">Programs</Link>
 			<a href="#contact">Contact</a>
