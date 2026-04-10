@@ -45,6 +45,11 @@ a {
     text-decoration: none;
 }
 
+img {
+    height: 4.6875rem;
+    margin-right: 0.5rem;
+}
+
 h1,
 h2,
 h3,
@@ -87,6 +92,8 @@ ul {
 }
 
 .brand {
+    display: flex;
+    align-items: center;
     color: var(--color-surface);
     font-weight: 700;
     font-size: 1rem;
